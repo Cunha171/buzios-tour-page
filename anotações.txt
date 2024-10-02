@@ -1,0 +1,9 @@
+barra de navegação central
+    Home
+    Passeios
+    Hospedagem          Brazil frag na direita (estilo menu)
+    Gastronomia
+    Consultoria
+
+!!!Se tiver logo mudar para navegação na esqueda com frags na direita
+
