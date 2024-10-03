@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@font-face {
+    font-family: 'manu';
+    src: url('/assets/AutumninSeptember.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +19,11 @@
 
 a{
     text-decoration: none;
+
+}
+
+body {
+    overflow-x: hidden;
 }
 
 header {
@@ -33,6 +46,7 @@ header {
 
 .logo a{
     font-weight: 700;
+    font-size: 1.5em;
     color: #fff;
     text-transform: uppercase;
 }
@@ -51,7 +65,7 @@ header {
     position: relative;
     font-weight: 500;
     color: #fff;
-    font-size: 1em;
+    font-size: 1.3em;
     transition: 0.3s ease;
 }
 
@@ -73,9 +87,10 @@ header {
 .nv-pai .nv-item button {
     margin-left: 20px;
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border-radius: 8px;
     font-weight: 500;
+    font-size: 1.3em;
     color: #fff;
     background-color: #005580;
     border: none;
@@ -116,6 +131,8 @@ header {
     pointer-events: none; /* Para que eventos de clique passem pelo overlay */
 }
 
+/* Conteudos de texto */
+
 .home .content{
     z-index: 888;
     color: #fff;
@@ -146,16 +163,23 @@ header {
     font-size: 20px;
 }
 
-.home .content a{
-    background: #fff;
-    padding: 10px 22px;
-    color: #000;
-    font-size: 1.1em;
-    font-weight: 500;
+.home .content button {
+    width: 18rem;
+    padding: 12px;
     border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.3em;
+    color: #fff;
+    background-color: #005580;
     border: none;
-    
 }
+
+.home .content button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Icones de media */
 
 .home .media{
     z-index: 888;
@@ -165,6 +189,7 @@ header {
     flex-direction: column;
     transition: 0.5s ease;
 }
+
 
 .home .media a{
     color: #fff;
@@ -178,6 +203,160 @@ header {
 
 .home .media a:hover{
     transform: scale(1.3);
+}
+
+/* Segunda Section */
+
+.passeios{
+    height: 3000px;
+    padding: 100px 200px 0;
+    background-image: url('/images/Frame\ 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.txt-praias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.txt-praias h4 {
+    font-weight: 500;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.txt-praias hr {
+    width: 25rem;
+    height: 2px;
+    background-color: #000;
+    border: #000;
+}
+
+.icon-praias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    gap: 100px;
+    margin-top: 50px;
+    transition: 0.3s ease;
+}
+
+/* Imagem Hover */
+
+/* Azeda */
+.azeda a {
+    font-weight: 500;
+    margin-top: 50px;
+    color: #005580;
+    text-decoration: none;
+}
+
+.azeda img {
+    position: absolute;
+    width: 970px;
+    height: 550px; 
+    margin-top: 50px;
+    left: 460px;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.azeda a:hover + img {
+    opacity: 1;
+}
+
+/* Tartaruga */
+.tartaruga a {
+    font-weight: 500;
+    margin-top: 50px;
+    color: #005580;
+    text-decoration: none;
+}
+
+.tartaruga img {
+    position: absolute;
+    width: 970px;
+    height: 550px; 
+    margin-top: 50px;
+    left: 460px;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.tartaruga a:hover + img {
+    opacity: 1;
+}
+
+/* Gériba */
+.geriba a {
+    font-weight: 500;
+    margin-top: 50px;
+    color: #005580;
+    text-decoration: none;
+}
+
+.geriba img {
+    position: absolute;
+    width: 970px;
+    height: 550px; 
+    margin-top: 50px;
+    left: 460px;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.geriba a:hover + img {
+    opacity: 1;
+}
+
+/* Forno */
+.forno a {
+    font-weight: 500;
+    margin-top: 50px;
+    color: #005580;
+    text-decoration: none;
+}
+
+.forno img {
+    position: absolute;
+    width: 970px;
+    height: 550px; 
+    margin-top: 50px;
+    left: 460px;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.forno a:hover + img {
+    opacity: 1;
+}
+
+/* Ferradura */
+.ferradura a {
+    font-weight: 500;
+    margin-top: 50px;
+    color: #005580;
+    text-decoration: none;
+}
+
+.ferradura img {
+    position: absolute;
+    width: 970px;
+    height: 550px; 
+    margin-top: 50px;
+    left: 460px;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.ferradura a:hover + img {
+    opacity: 1;
 }
 
 /* Resposividade */
