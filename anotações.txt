@@ -7,3 +7,138 @@ barra de navegação central
 
 !!!Se tiver logo mudar para navegação na esqueda com frags na direita
 
+hover imagem
+        <div class="icon-praias">
+            <div class="azeda">
+                <a href=""><h3>Azeda</h3></a>
+                <img src="/images/Buzios.jpg" alt="">
+            </div>
+            <div class="tartaruga">
+                <a href="" class="tartaruga"><h3>Da tartaruga</h3></a>
+                <img src="/images/Tartaruga.jpg" alt="">
+            </div>
+            <div class="geriba">
+                <a href="" class="geriba"><h3>Gériba</h3></a>
+                <img src="/images/geriba.jpg" alt="">
+            </div>
+            <div class="forno">
+                <a href="" class="forno"><h3>Forno</h3></a>
+                <img src="/images/forno.jpg" alt="">
+            </div>
+            <div class="ferradura">
+                <a href="" class="ferradura"><h3>Ferradura</h3></a>
+                <img src="/images/ferradura.jpg" alt="">
+            </div>
+        </div>
+
+        /* Imagem Hover */
+
+/* Azeda */
+.azeda a {
+    font-weight: 500;
+    margin-top: 50px;
+    color: #005580;
+    text-decoration: none;
+}
+
+.azeda img {
+    position: absolute;
+    width: 970px;
+    height: 550px; 
+    margin-top: 50px;
+    left: 460px;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.azeda a:hover + img {
+    opacity: 1;
+}
+
+/* Tartaruga */
+.tartaruga a {
+    font-weight: 500;
+    margin-top: 50px;
+    color: #005580;
+    text-decoration: none;
+}
+
+.tartaruga img {
+    position: absolute;
+    width: 970px;
+    height: 550px; 
+    margin-top: 50px;
+    left: 460px;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.tartaruga a:hover + img {
+    opacity: 1;
+}
+
+/* Gériba */
+.geriba a {
+    font-weight: 500;
+    margin-top: 50px;
+    color: #005580;
+    text-decoration: none;
+}
+
+.geriba img {
+    position: absolute;
+    width: 970px;
+    height: 550px; 
+    margin-top: 50px;
+    left: 460px;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.geriba a:hover + img {
+    opacity: 1;
+}
+
+/* Forno */
+.forno a {
+    font-weight: 500;
+    margin-top: 50px;
+    color: #005580;
+    text-decoration: none;
+}
+
+.forno img {
+    position: absolute;
+    width: 970px;
+    height: 550px; 
+    margin-top: 50px;
+    left: 460px;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.forno a:hover + img {
+    opacity: 1;
+}
+
+/* Ferradura */
+.ferradura a {
+    font-weight: 500;
+    margin-top: 50px;
+    color: #005580;
+    text-decoration: none;
+}
+
+.ferradura img {
+    position: absolute;
+    width: 970px;
+    height: 550px; 
+    margin-top: 50px;
+    left: 460px;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.ferradura a:hover + img {
+    opacity: 1;
+}

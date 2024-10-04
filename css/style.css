@@ -216,149 +216,51 @@ header {
     
 }
 
-.txt-praias {
+.txt-atra {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-.txt-praias h4 {
+.txt-atra h4 {
     font-weight: 500;
     font-size: 1.8em;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
 
-.txt-praias hr {
+.txt-atra hr {
     width: 25rem;
     height: 2px;
     background-color: #000;
     border: #000;
 }
 
-.icon-praias {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    gap: 100px;
-    margin-top: 50px;
-    transition: 0.3s ease;
-}
-
 /* Imagem Hover */
 
-/* Azeda */
-.azeda a {
-    font-weight: 500;
-    margin-top: 50px;
-    color: #005580;
-    text-decoration: none;
+.img-atra {
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    grid-template-rows: repeat(4, 350px);
+    grid-template-areas: 
+    "Item-1 Item-1 Item-3 Item-2"
+    "Item-1 Item-1 Item-5 Item-2"
+    "Item-6 Item-6 Item-6 Item-2"
+    "Item-1 Item-1 Item-5 Item-2";
 }
 
-.azeda img {
-    position: absolute;
-    width: 970px;
-    height: 550px; 
-    margin-top: 50px;
-    left: 460px;
-    opacity: 0; 
-    transition: opacity 0.3s ease;
+.img-atra .a1-g {
+    background-color: #005580;
+    Item-1
 }
 
-.azeda a:hover + img {
-    opacity: 1;
+.img-atra .a1-p {
+    background-color: #005580;
+    grid-column: 3;
+    grid-row: 1;
+    Item-2
 }
-
-/* Tartaruga */
-.tartaruga a {
-    font-weight: 500;
-    margin-top: 50px;
-    color: #005580;
-    text-decoration: none;
-}
-
-.tartaruga img {
-    position: absolute;
-    width: 970px;
-    height: 550px; 
-    margin-top: 50px;
-    left: 460px;
-    opacity: 0; 
-    transition: opacity 0.3s ease;
-}
-
-.tartaruga a:hover + img {
-    opacity: 1;
-}
-
-/* Gériba */
-.geriba a {
-    font-weight: 500;
-    margin-top: 50px;
-    color: #005580;
-    text-decoration: none;
-}
-
-.geriba img {
-    position: absolute;
-    width: 970px;
-    height: 550px; 
-    margin-top: 50px;
-    left: 460px;
-    opacity: 0; 
-    transition: opacity 0.3s ease;
-}
-
-.geriba a:hover + img {
-    opacity: 1;
-}
-
-/* Forno */
-.forno a {
-    font-weight: 500;
-    margin-top: 50px;
-    color: #005580;
-    text-decoration: none;
-}
-
-.forno img {
-    position: absolute;
-    width: 970px;
-    height: 550px; 
-    margin-top: 50px;
-    left: 460px;
-    opacity: 0; 
-    transition: opacity 0.3s ease;
-}
-
-.forno a:hover + img {
-    opacity: 1;
-}
-
-/* Ferradura */
-.ferradura a {
-    font-weight: 500;
-    margin-top: 50px;
-    color: #005580;
-    text-decoration: none;
-}
-
-.ferradura img {
-    position: absolute;
-    width: 970px;
-    height: 550px; 
-    margin-top: 50px;
-    left: 460px;
-    opacity: 0; 
-    transition: opacity 0.3s ease;
-}
-
-.ferradura a:hover + img {
-    opacity: 1;
-}
-
 /* Resposividade */
 
 /* Resposividade */
