@@ -1,0 +1,74 @@
+header {
+    /* posicionamento */
+    z-index: 999;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* estilo menu */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 200px;
+    color: #000;
+    /* transição */
+    transition: 0.5s ease;
+}
+
+.logo a{
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nv-pai {
+    position: relative;
+}
+
+.nv-pai .nv-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nv-pai .nv-item a {
+    position: relative;
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.3em;
+    transition: 0.3s ease;
+}
+
+.nv-pai .nv-item a:before {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+.nv-pai .nv-item a:hover:before {
+    width: 100%;
+}
+
+.nv-pai .nv-item button {
+    margin-left: 20px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.3em;
+    color: #fff;
+    background-color: #005580;
+    border: none;
+}
+
+.nv-pai .nv-item button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}

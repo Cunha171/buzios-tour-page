@@ -1,0 +1,103 @@
+.home {
+    padding: 100px 200px ;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home .video-slide {
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 171, 255, 0.2); /* Cor da máscara e opacidade */
+    pointer-events: none; /* Para que eventos de clique passem pelo overlay */
+}
+
+/* Conteudos de texto */
+
+.home .content{
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.home .content h1{
+    font-size: 3em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+.home .content h1 span{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.home .content .p-quebra{
+    width: 70%;
+}
+
+.home .content p{
+    margin-bottom: 65px;
+    font-size: 20px;
+}
+
+.home .content button {
+    width: 18rem;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.3em;
+    color: #fff;
+    background-color: #005580;
+    border: none;
+}
+
+.home .content button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Icones de media */
+
+.home .media{
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+
+
+.home .media a{
+    color: #fff;
+    font-size: 1.6em;
+    transition: 0.3s ease;
+}
+
+.home .media a:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.home .media a:hover{
+    transform: scale(1.3);
+}

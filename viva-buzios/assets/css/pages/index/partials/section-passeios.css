@@ -1,0 +1,273 @@
+.passeios{
+    height: 3000px;
+    padding: 100px 200px 0;
+    background-image: url('assets/images/pages/index/Frame\ 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.txt-atra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.txt-atra h4 {
+    font-weight: 500;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.txt-atra hr {
+    width: 25rem;
+    height: 2px;
+    background-color: #000;
+    border: #000;
+}
+
+/* Grid atrações */
+
+.img-atra {
+    display: grid;
+    margin-top: 50px;
+    justify-content: center;
+    grid-template-columns: repeat(4, 350px);
+    grid-template-rows: repeat(4, 350px);
+    grid-template-areas: 
+    "Item-1 Item-1 Item-2 Item-3"
+    "Item-1 Item-1 Item-4 Item-5"
+    "Item-7 Item-8 Item-6 Item-6"
+    "Item-9 Item-10 Item-6 Item-6";
+}
+
+.img-atra .a1-g {
+    grid-area: Item-1;      /*Bloco Principal cima */
+}
+
+.img-atra .a1-p {
+    grid-area: Item-2;
+}
+
+.img-atra .a2-p {
+    grid-area: Item-3;
+}
+
+.img-atra .a3-p {
+    grid-area: Item-4;
+}
+
+.img-atra .a4-p {
+    grid-area: Item-5;
+}
+
+.img-atra .b1-g {
+    grid-area: Item-6;      /*Bloco Principal baixo */
+}
+
+.img-atra .b1-p {
+    grid-area: Item-7;
+}
+
+.img-atra .b2-p {
+    grid-area: Item-8;
+}
+
+.img-atra .b3-p {
+    grid-area: Item-9;
+}
+
+.img-atra .b4-p {
+    grid-area: Item-10;
+}
+
+/* Img-Grid */
+
+.img-atra img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* mantém a proporção da imagem */
+    z-index: 8;
+}
+
+.gradient{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+    position: relative;
+    top: -350px;
+    z-index: 9;
+}
+
+.gradient-g{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.2;
+    position: relative;
+    top: -700px;
+    z-index: 9;
+}
+
+/* Texto Card Grid */
+
+.txt-card, .txt-card-g {
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #fffded;
+    position: absolute;
+    z-index: 10;
+    padding: 300px 0 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+
+.txt-card-g {
+    padding: 630px 0 0 30px;
+}
+
+.txt-card .icon-dest {
+    font-size: 1.3rem;
+}
+
+.txt-atra .h4-g{
+    padding: 600px 0 0 30px;   
+}
+
+.card-atra {
+    display: block;
+    height: 350px;
+    width: 350px;
+    max-height: 350px;
+}
+
+.card-atra-g {
+    display: block;
+    height: 700px;
+    width: 700px;
+}
+
+/* equipe */
+
+#equipe{
+    margin-top: 100px;
+}
+
+.pai-profiles {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 240px;
+    height: 320px;
+    background-color: #E9F3FF;
+    border-radius: 1pc;
+    margin-top: 60px;
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.9);
+}
+
+.profile .img-prof-1, .img-prof-2, .img-prof-3 {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 10pc;
+}
+
+.img-prof-1 {
+    background-image: url(/assets/images/pages/index/profile1.png);
+    background-size: cover;
+}
+
+.img-prof-2 {
+    background-image: url(/assets/images/pages/index/profile2.png);
+    background-size: cover;
+}
+
+.img-prof-3 {
+    background-image: url(/assets/images/pages/index/profile3.png);
+    background-size: cover;
+}
+
+.profile h5{
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.profile a{
+    width: 50%;
+    height: 1.7rem;
+    border-radius: 8pc;
+    font-weight: 500;
+    font-size: 1em;
+    color: #fff;
+    background-color: #005580;
+    border: none; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile a:hover {
+    transform: scale(1.1);
+}
+
+.newsletter {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    background-color: #005580;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 20rem;
+}
+
+.txt-nws {
+    color: #fff;
+}
+.txt-nws h3{
+    font-size: 2.3em;
+}
+
+.txt-nws p{
+    font-size: 1.3em;
+}
+
+.ipt-nws {
+    display: flex;
+    align-items: center;
+}
+
+.ipt-nws .txt{
+    width: 300px;
+    height: 60px;
+    padding: 0 0 0 30px;
+    font-size: 12px;
+    border-radius: 8px 0 0 8px;
+}
+
+.ipt-nws .sbm{
+    height: 60px;
+    width: 75px;
+    background-color: #0d263b;
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+}
+.ipt-nws .sbm:hover{
+    transform: scale(1.2);
+}
