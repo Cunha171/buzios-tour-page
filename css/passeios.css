@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    font-family: Inter, sans-serif;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    /* posicionamento */
+    z-index: 999;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* estilo menu */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 200px;
+    color: #000;
+    /* transição */
+    transition: 0.5s ease;
+    background-color: #50caff;
+}
+
+.logo a{
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nv-pai {
+    position: relative;
+}
+
+.nv-pai .nv-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nv-pai .nv-item a {
+    position: relative;
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.3em;
+    transition: 0.3s ease;
+}
+
+.nv-pai .nv-item a:before {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+.nv-pai .nv-item a:hover:before {
+    width: 100%;
+}
+
+.nv-pai .nv-item button {
+    margin-left: 20px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.3em;
+    color: #fff;
+    background-color: #005580;
+    border: none;
+}
+
+.nv-pai .nv-item button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.home-passeios{
+    margin: 11rem 5rem 0 5rem;
+
+}
+
+.item1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.right1 img{
+    width: 600px;
+    height: 600px;
+    border-radius: 100%;
+}
+
+.left1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.left1 h2{
+    font-size: 2rem;
+    letter-spacing: 6px;
+}
+
+.left1 p{
+    font-size: 1.2rem;
+}
+
+.item2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.right2 img{
+    width: 600px;
+    height: 600px;
+    border-radius: 100%;
+}
+
+.left2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.left2 h2{
+    font-size: 2rem;
+    letter-spacing: 6px;
+}
+
+.left2 p{
+    font-size: 1.2rem;
+}
+
+.item3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.right3 img{
+    width: 600px;
+    height: 600px;
+    border-radius: 100%;
+}
+
+.left3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.left3 h2{
+    font-size: 2rem;
+    letter-spacing: 6px;
+}
+
+.left3 p{
+    font-size: 1.2rem;
+}
+
+footer {
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 53%;
+    width: 100%;
+    margin-top: 25rem;
+    background-color: #0d263b;
+}
+
+footer .principal{
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    margin-top: 40px;
+    gap: 150px;
+}
+
+footer .c{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70px;
+    color: #fff;
+}
+
+footer .c .txt-sub{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 15px;
+    color: #fff;
+}
+
+footer a{ 
+    color: #fff;
+}
+
+.txt-sub .loc, .tel, .email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.creditos {
+    margin-top: 70px;
+}
+
+.creditos hr {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border: #fff;
+}
+
+.creditos .link {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
